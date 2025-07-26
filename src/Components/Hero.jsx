@@ -1,44 +1,30 @@
-import React, { useContext, useEffect, useRef } from 'react'
-import  travellingVideo  from "../assets/travelling.mp4"
-import { gsap } from 'gsap'
+
+import map from '../assets/travel.png';
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocoScrollContext from '../../LocoScrollContext';
 
 function Hero() {
-  const scrollRef= useContext(LocoScrollContext)
-  const head1Ref = useRef(null);
-
-  useEffect(()=>{
-    if(!scrollRef.current)return;
-    gsap.to(head1Ref.current,{ x:-30,
-      scrollTrigger:{
-        trigger:head1Ref.current,
-        scroller:scrollRef.current,
-        markers: true,
-        start:"top 30%",
-        end:"top 0%",
-        scrub:2,
-      }
-    })
-  },[scrollRef])
-
-
-
-
   return (
-    <section className='hero-part text-white text-left mt-[8vh]'>
-      <h2 ref={head1Ref} className='text-[8vw] font-semibold ml-[4vw] leading-[22vh]'>Where Geography</h2>
-      <h2 className='text-[8vw] font-semibold ml-[20vw] leading-[22vh]'>Meets Discovery</h2>
-      <video
-        src={travellingVideo}
-        autoPlay
-        loop
-        muted
-        className='w-[60%] mt-[10vh] block mx-auto '
-        aria-hidden="true"
+    <section className="hero-part text-white flex flex-col justify-center items-center mt-[10vh] px-4 text-center">
+      <h1 className="text-5xl font-extrabold animate-fade-in-up mb-2">
+        Discover the world.
+      </h1>
+      <h2 className="text-4xl font-semibold text-gray-400 animate-fade-in-up delay-150">
+        A modern atlas for curious minds.
+      </h2>
+
+      <button className="mt-10 px-6 py-3 bg-blue-600 text-white font-semibold rounded-3xl shadow-md hover:bg-blue-700 hover:scale-105 transition-all duration-300 animate-fade-in-up delay-300">
+        Get Started
+      </button>
+
+      <img
+        src={map}
+        alt="Map"
+        className="mt-16 rounded-lg shadow-xl h-[80vh] object-cover animate-fade-in-up delay-500"
       />
     </section>
-  )
+  );
 }
 
 export default Hero

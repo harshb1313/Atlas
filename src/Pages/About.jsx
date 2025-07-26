@@ -1,29 +1,24 @@
 import React from 'react';
+import BentoBox from '../Components/Bentobox';
 
 
 export const About = () => {
-    return <div className='text-white flex flex-col gap-[10px]'>
-        <h1 className='text-4xl font-bold text-center mt-10'>About Us – WorldAtlas</h1>
-        <h4>Discover the World, One Country at a Time</h4>
-        <p>Welcome to WorldAtlas, your gateway to exploring every corner of the globe. Whether you're a curious learner, a passionate traveler, or simply fascinated by the diversity of our planet, our platform brings you closer to the world with rich, interactive insights.
-            At WorldAtlas, we believe geography is more than just maps and borders — it's about understanding cultures, people, landmarks, languages, and the stories behind each nation.
+    return <div className="text-white flex flex-col gap-4 px-[2rem]">
+  <h1 className="text-5xl md:text-6xl font-extrabold text-center leading-tight mt-16 tracking-tight">
+    About Us <span className="text-primary">– WorldAtlas</span>
+  </h1>
 
-        </p>
-        <h1>What We Offer</h1>
-        <ul>
-            <li>Comprehensive Country Profiles: From capitals to currencies, flags to languages, dive deep into data about every country.</li>
+  <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center mt-6">
+    World Atlas is a modern, interactive platform designed to help you explore detailed information about every country in the world.
+  </p>
 
-            <li>Visual Insights: Interactive visuals and infographics to help you explore demographics, geography, and more.</li>
+  <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center">
+    Our goal is simple — to make global knowledge accessible and engaging. From flags and capitals to population stats, languages, and cultural insights, we organize country-specific data in a way that's easy to browse and understand.
+  </p>
 
-            <li>Curated Facts & Highlights: Discover fascinating facts, unique specialties, and hidden gems about nations worldwide.</li>
-
-            <li> 🚀 Fast, Responsive Experience: Built for performance and accessibility — explore on any device, anywhere.</li>
-        </ul>
-        <h1>Our Mission</h1>
-        <p>To make global knowledge accessible, visual, and engaging — empowering people of all ages to learn about the world in an interactive, meaningful way.</p>
-        <h1>Join Us On This Journey</h1>
-        <p>Whether you're planning your next trip, studying for school, or just expanding your horizons — we're here to guide you through the ever-amazing journey that is Planet Earth.
-            Let’s explore together. 🌎
-        </p>
-    </div>
+  <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center mb-16">
+    Whether you're a student, a researcher, or just curious about the world, World Atlas gives you a clean, structured way to discover facts and patterns across nations — all in one place, with a visual-first approach.
+  </p>
+  <BentoBox/>
+</div>
 }
