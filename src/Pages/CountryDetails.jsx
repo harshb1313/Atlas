@@ -83,7 +83,7 @@ export function CountryDetails() {
   ];
 
   return (
-    <div className="min-h-screen bg-black md:p-8">
+    <div className="min-h-screen bg-black md:p-8 mt-[10vh]">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>

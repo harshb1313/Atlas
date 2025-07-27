@@ -3,6 +3,7 @@ import map from '../assets/travel.png';
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocoScrollContext from '../../LocoScrollContext';
+import { NavLink } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -14,9 +15,12 @@ function Hero() {
         A modern atlas for curious minds.
       </h2>
 
-      <button className="mt-10 px-6 py-3 bg-blue-600 text-white font-semibold rounded-3xl shadow-md hover:bg-blue-700 hover:scale-105 transition-all duration-300 animate-fade-in-up delay-300">
-        Get Started
-      </button>
+      <NavLink to="/country">
+        <button className="mt-10 px-6 py-3 bg-blue-600 text-white font-semibold rounded-3xl shadow-md hover:bg-blue-700 hover:scale-105 transition-all duration-300 animate-fade-in-up delay-300">
+          Get Started
+        </button>
+      </NavLink>
+
 
       <img
         src={map}

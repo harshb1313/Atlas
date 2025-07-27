@@ -34,7 +34,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-black bg-opacity-90 backdrop-blur-md px-6 py-4 space-y-4 text-white font-medium">
+        <div className="md:hidden bg-black bg-opacity-90 backdrop-blur-md px-6 py-4 space-y-4 text-white font-medium flex justify-between">
           <NavLink to="/" onClick={toggleMenu} className={navLinkClass}>Home</NavLink>
           <NavLink to="/about" onClick={toggleMenu} className={navLinkClass}>About</NavLink>
           <NavLink to="/country" onClick={toggleMenu} className={navLinkClass}>Country</NavLink>
